@@ -1,5 +1,5 @@
 function angkaPrima(angka) {
-    if(angka==1){
+    if(angka== 1 || angka == 0 || angka < 0){
         return false;
     }else if (angka==2){
         return true;
@@ -19,3 +19,7 @@ function angkaPrima(angka) {
   console.log(angkaPrima(6)); // false
   console.log(angkaPrima(23)); // true
   console.log(angkaPrima(33)); // false
+
+  //Additional test case (0 dan negatif)
+  console.log(angkaPrima(0)); // true
+  console.log(angkaPrima(-7)); // true
